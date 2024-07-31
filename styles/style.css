@@ -1,3 +1,47 @@
 @import url(/styles/reset.css);
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --accent: #CDA274;
+    --light-black: #292F36;
+    --secondary: #F4F0EC;
+    --gray: #4D5053;
+    --background: #E7E7E7;
+    --border: #E5E5E5;
+    --white: #FFFFFF;
+    --font: "Jost", sans-serif;
+    --font-display: "DM Serif Display", Serif;
+}
+
+.header {
+    padding: 26px 120px 18px;
+    display: flex;
+    align-items: center;
+    background: var(--background);
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 177px;
+    height: 50px;
+}
+
+.header-ul {
+    display: flex;
+    column-gap: 40px;
+}
+
+.header-ul-li-a {
+    font-family: var(--font);
+    font-size: 19px;
+    line-height: 158%;
+    letter-spacing: 0.02em;
+    color: var(--light-black);
+    padding: 12px 0 20px;
+    transition: .3s;
+}
+
+.header-ul-li-a:hover {
+    color: var(--accent);
+}
