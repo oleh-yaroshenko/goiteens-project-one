@@ -7,18 +7,20 @@
     --light-black: #292F36;
     --secondary: #F4F0EC;
     --gray: #4D5053;
-    --background: #E7E7E7;
-    --border: #E5E5E5;
+    --border: #E7E7E7;
+    --divider: #E5E5E5;
     --white: #FFFFFF;
-    --font: "Jost", sans-serif;
-    --font-display: "DM Serif Display", Serif;
+    --display: "DM Serif Display", Serif;
+}
+
+body {
+    font-family: "Jost", sans-serif;
 }
 
 .header {
     padding: 26px 120px 18px;
     display: flex;
     align-items: center;
-    background: var(--background);
     justify-content: space-between;
 }
 
@@ -33,7 +35,6 @@
 }
 
 .header-ul-li-a {
-    font-family: var(--font);
     font-size: 19px;
     line-height: 158%;
     letter-spacing: 0.02em;
@@ -44,4 +45,46 @@
 
 .header-ul-li-a:hover {
     color: var(--accent);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-hero {
+    display: flex;
+    flex-direction: column;
+    padding: 195px 120px 250px;
+    border-radius: 0 0 0 290px;
+    background: url(/assets/hero-background.jpg) no-repeat center/cover;
+}
+
+.main-hero-title {
+    font-family: var(--display);
+    font-size: 80px;
+    line-height: 120%;
+    color: var(--light-black);
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+.main-hero-descr {
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--gray);
+    width: 50%;
+    padding-bottom: 35px;
+}
+
+.main-hero-a {
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    border-radius: 18px;
+    background: var(--light-black);
+    width: fit-content;
+    padding: 22px 68px 22px 34px;
 }
