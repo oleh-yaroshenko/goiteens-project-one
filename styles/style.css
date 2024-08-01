@@ -82,7 +82,6 @@ body {
 .main-hero-descr {
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: var(--gray);
     width: 50%;
     padding-bottom: 35px;
@@ -129,7 +128,6 @@ body {
     color: var(--light-black);
     font-size: 25px;
     line-height: 156%;
-    letter-spacing: 0.01em;
     text-align: center;
     padding-bottom: 18px;
 }
@@ -138,7 +136,6 @@ body {
     color: var(--gray);
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     text-align: center;
 }
 
@@ -187,7 +184,6 @@ body {
 .main-estimate-descr {
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: var(--gray);
     padding-bottom: 30px;
 }
@@ -226,14 +222,12 @@ body {
 .main-estimate-call-text-a {
     font-size: 24px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: var(--gray);
 }
 
 .main-estimate-call-text-span {
     font-size: 22px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: var(--gray);
 }
 
@@ -321,21 +315,18 @@ body {
     font-family: var(--display);
     font-size: 25px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: var(--light-black);
 }
 
 .main-reviews-wrapper-card-info-text-span {
     font-size: 18px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: var(--gray);
 }
 
 .main-reviews-wrapper-card-descr {
     font-size: 20px;
     line-height: 150%;
-    letter-spacing: 0.01em;
     color: var(--gray);
 }
 
@@ -350,5 +341,227 @@ body {
     align-items: center;
     column-gap: 150px;
     animation: scroll 20s linear infinite;
-    width: calc(1200px * 2);
+    width: calc(2000px);
+}
+
+.main-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 120px 80px;
+}
+
+.main-projects-title {
+    font-family: var(--display);
+    font-size: 47px;
+    line-height: 133%;
+    text-align: center;
+    color: var(--light-black);
+    padding-bottom: 20px;
+}
+
+.main-projects-descr {
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray);
+    width: 70%;
+    padding-bottom: 70px;
+}
+
+.main-projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 60px;
+    padding: 0 10px 60px;
+}
+
+.main-projects-wrapper-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - 20px);
+}
+
+.main-projects-wrapper-card-img {
+    width: 100%;
+    border-radius: 0 80px 0 0;
+}
+
+.main-projects-wrapper-card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-projects-wrapper-card-info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-projects-wrapper-card-info-title {
+    font-family: var(--display);
+    font-size: 24px;
+    line-height: 156%;
+    color: var(--light-black);
+    padding-top: 24px;
+}
+
+.main-projects-wrapper-card-info-subtitle {
+    font-size: 22px;
+    line-height: 150%;
+    color: var(--gray);
+}
+
+.main-projects-wrapper-card-info-icon {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    background: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-projects-wrapper-card-info-icon::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 16px;
+    background: url(/assets/icons/arrow.svg);
+}
+
+.main-experience {
+    display: flex;
+    align-items: stretch;
+    padding: 140px 120px;
+    background: var(--secondary);
+    margin-bottom: 130px;
+}
+
+.main-experience-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    flex: 1 1 auto;
+}
+
+.main-experience-card-title {
+    font-family: var(--display);
+    font-size: 85px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--accent);
+    padding-top: 14px;
+}
+
+.main-experience-card-descr {
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray);
+    padding-bottom: 10px;
+}
+
+.main-experience-card-divider {
+    flex-basis: 1px;
+    background: var(--accent);
+}
+
+.main-blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 120px 100px;
+}
+
+.main-blogs-title {
+    font-family: var(--display);
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--light-black);
+    padding: 14px 0 20px;
+}
+
+.main-blogs-descr {
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray);
+    width: 70%;
+    padding-bottom: 70px;
+}
+
+.main-blogs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    padding: 0 10px 40px;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.main-blogs-wrapper-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%;
+    padding: 22px 22px 40px;
+    border: 1px solid var(--border);
+    border-radius: 62px;
+}
+
+.main-blogs-wrapper-card-img {
+    width: 100%;
+    height: 296px;
+    border-radius: 45px 45px 0 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 30px 24px;
+}
+
+.main-blogs-wrapper-card-img-span {
+    border-radius: 8px 8px 8px 0;
+    background: var(--white);
+    padding: 10px;
+    line-height: 150%;
+    color: var(--gray);
+}
+
+.main-blogs-wrapper-card-title {
+    padding: 15px 0 20px;
+    font-family: var(--display);
+    font-size: 25px;
+    line-height: 140%;
+    color: var(--light-black);
+}
+
+.main-blogs-wrapper-card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-blogs-wrapper-card-info-span {
+    line-height: 150%;
+    color: var(--gray);}
+
+.main-blogs-wrapper-card-info-icon {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    background: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-blogs-wrapper-card-info-icon::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 16px;
+    background: url(/assets/icons/arrow.svg);
 }
