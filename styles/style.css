@@ -88,3 +88,221 @@ body {
     width: fit-content;
     padding: 22px 68px 22px 34px;
 }
+
+.main-features {
+    padding: 100px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-features-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.333%;
+    padding: 35px 50px 70px;
+}
+
+.main-features-card-title {
+    font-family: var(--display);
+    color: var(--light-black);
+    font-size: 25px;
+    line-height: 156%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+.main-features-card-descr {
+    color: var(--gray);
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.main-features-card-a {
+    color: var(--gray);
+    position: relative;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.main-features-card-a::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 17px;
+    background: url(/assets/icons/thin-arrow.svg);
+    margin-top: 4px;
+    margin-left: 6px;
+}
+
+.main-estimate {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px 140px;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+.main-estimate-text {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 8px);
+}
+
+.main-estimate-title {
+    font-family: var(--display);
+    font-size: 50px;
+    line-height: 130%;
+    color: var(--light-black);
+    padding-bottom: 42px;
+}
+
+.main-estimate-descr {
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--gray);
+    padding-bottom: 30px;
+}
+
+.main-estimate-call {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.main-estimate-call-icon {
+    background: var(--secondary);
+    border-radius: 50%;
+    width: 93px;
+    height: 93px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-estimate-call-icon::after {
+    content: "";
+    position: absolute;
+    height: 34px;
+    width: 34px;
+    background: url(/assets/icons/phone.svg);
+}
+
+.main-estimate-call-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.main-estimate-call-text-a {
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--gray);
+}
+
+.main-estimate-call-text-span {
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--gray);
+}
+
+.main-estimate-a {
+    border-radius: 18px;
+    background: var(--light-black);
+    padding: 22px 68px 22px 34px;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    width: fit-content;
+}
+
+.main-estimate-img {
+    width: calc(50% - 8px);
+    border-radius: 0 326px 0 123px;
+}
+
+.main-reviews {
+    display: flex;
+    flex-direction: column;
+    margin: 0 120px 140px;
+    padding: 104px 50px 120px;
+    align-items: center;
+    background: var(--secondary);
+    border-radius: 70px;
+}
+
+.main-reviews-title {
+    font-family: var(--display);
+    font-size: 45px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--light-black);
+    width: 50%;
+    padding-bottom: 45px;
+}
+
+.main-reviews-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 16px;
+    padding: 0 50px 120px;
+}
+
+.main-reviews-wrapper-card {
+    width: calc(33.333% - (32px / 3));
+    padding: 50px 35px 45px 30px;
+    background: var(--white);
+    border-radius: 30px;
+}
+
+.main-reviews-wrapper-card-info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 26px;
+}
+
+.main-reviews-wrapper-card-info-img {
+    border-radius: 50%;
+    width: 77px;
+    height: 77px;
+}
+
+.main-reviews-wrapper-card-info-text {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-reviews-wrapper-card-info-text-title {
+    font-family: var(--display);
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--light-black);
+}
+
+.main-reviews-wrapper-card-info-text-span {
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--gray);
+}
+
+.main-reviews-wrapper-card-descr {
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--gray);
+}
