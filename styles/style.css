@@ -87,6 +87,17 @@ body {
     background: var(--light-black);
     width: fit-content;
     padding: 22px 68px 22px 34px;
+    position: relative;
+}
+
+.main-hero-a::after {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 40px;
+    background: url(/assets/icons/wide-arrow.svg);
+    margin-left: 20px;
+    margin-top: -5px;
 }
 
 .main-features {
@@ -225,6 +236,17 @@ body {
     letter-spacing: 0.04em;
     color: var(--white);
     width: fit-content;
+    position: relative;
+}
+
+.main-estimate-a::after {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 40px;
+    background: url(/assets/icons/wide-arrow.svg);
+    margin-left: 20px;
+    margin-top: -5px;
 }
 
 .main-estimate-img {
